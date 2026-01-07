@@ -38,7 +38,9 @@ export function initScrollReveal() {
           y: 0,
           duration: 0.9,
           ease: 'power3.out',
-          onComplete: () => element.style.removeProperty('will-change'),
+          onComplete: () => {
+            element.style.removeProperty('will-change')
+          },
         })
     })
 
